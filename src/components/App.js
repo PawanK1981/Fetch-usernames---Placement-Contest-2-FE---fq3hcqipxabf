@@ -12,7 +12,7 @@ const App = () => {
     setname(data)
    })
  },[id]
- const changeInput =(e)=>
+ const changeInput =(e)=>{
  setid(e.target.value)
  }
   
