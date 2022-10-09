@@ -7,7 +7,7 @@ const App = () => {
  useEffect(()) =>
  {
   fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
-   .then(res.json()).then(data=>
+   .then(res=>res.json()).then(data=>
    {console.log(data);
     setname(data)
    })
