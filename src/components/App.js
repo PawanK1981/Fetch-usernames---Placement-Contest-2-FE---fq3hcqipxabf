@@ -11,7 +11,7 @@ const App = () => {
    {console.log(data);
     setname(data)
    })
- },[id]
+ },[id])
  const changeInput =(e)=>{
  setid(e.target.value)
  }
