@@ -2,7 +2,22 @@ import React from 'react'
 import '../styles/App.css';
 import { useState, useEffect } from 'react';
 const App = () => {
-//code here 
+ const[name,setname] = useState([]);
+ const[id,setid] useState(1);
+ useEffect(()) =>
+ {
+  fetch(`https://content.newtonschool.co/v1/pr/main/users/${id}`)
+   .then(res.json())
+  .then(data=>
+   {console.log(data);
+    setname(data)
+   })
+ },[id]
+ const changeInput =(e)=>
+ setid(e.target.value)
+ }
+  
+               
  
 
 
